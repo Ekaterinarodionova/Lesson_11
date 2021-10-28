@@ -1,0 +1,163 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+	/* color: #000; */
+	/* font-family:""; */
+	overflow-x: hidden;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	background-color: rgb(255, 250, 250);
+}
+.wrapper {
+	min-height: 100%;
+	padding: 30px;
+}
+/* ------------------------------ */
+
+/* /* 
+/* .block {
+	width: 100%;
+	width: 200px;
+	height: 200px;
+	background-color: rgba(255, 255, 255, 0.1);
+	position: relative;
+/* } */
+
+/* 	
+
+.block__item {
+	background-color: #7a956b;
+	width: 200px;
+	height: 200px;
+	line-height: 200px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.block:hover .block__item {
+}
+
+[data-container] {
+	margin: 0px auto;
+	max-width: 300px;
+} */
+
+.sun {
+	border-radius: 50%;
+	width: 100%;
+	width: 200px;
+	height: 200px;
+	background-color: rgba(255, 157, 0, 0.74);
+	position: relative;
+	margin: 50px;
+}
+.sun__item {
+	border-radius: 50%;
+	/* background-color: rgb(255, 157, 0); */
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transform: scale(0);
+	transition: all 0.3s ease 0s;
+}
+
+.sun:hover .sun__item {
+	transform: scale(1.5);
+}
+.sun__image {
+	width: 100%;
+	width: 200px;
+	height: 200px;
+}
+.sun:hover .sun__image {
+	transform: rotate(360deg);
+	transition: all 0.5s ease 0s;
+}
+.main {
+	position: relative;
+}
+
+.main__city {
+	background: url("../img/12.jpg") repeat;
+	width: 100%;
+	height: 640px;
+	position: absolute;
+	left: 0;
+	top: -20px;
+}
+.penny {
+	position: relative;
+}
+.penny__wheel {
+	padding: 100px;
+	width: 650px;
+}
+
+.image__wheel {
+	width: 300px;
+}
+.small-wheel {
+	width: 100px;
+	position: relative;
+	top: 150px;
+	left: -95px;
+}
+.crossbar {
+	height: 210px;
+	width: 250px;
+	position: absolute;
+	left: 150px;
+	bottom: 135px;
+}
+
+.elefant__image {
+	width: 560px;
+	height: 460px;
+	position: absolute;
+	top: 110px;
+	left: 70px;
+}
